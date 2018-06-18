@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@android:color/white"
+    tools:context="videosearchapp.com.videosearchapp.Activity_VideoSearch"
+    tools:showIn="@layout/activity__video_search">
+    <LinearLayout
+        android:layout_width="368dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="8dp">
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="300dp"
+        android:padding="10dp"
+        android:hint="Search videos"
+        android:background="@drawable/search_bg"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/btnSearch"
+        android:layout_width="50dp"
+        android:padding="12dp"
+        android:background="@drawable/btn_bg"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_search"/>
+    </RelativeLayout>
+
+</LinearLayout>
+    <GridView
+        android:id="@+id/videoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginTop="10dp"
+        >
+
+    </GridView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
